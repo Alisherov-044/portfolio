@@ -9,7 +9,7 @@ export function Header() {
 
     return (
         <header className="relative">
-            <nav className="container relative z-20 flex items-center justify-between bg-background px-4 py-6 md:py-0">
+            <nav className="container relative z-20 md:bg-transparent flex items-center justify-between bg-background px-4 py-6 md:py-0">
                 <Link href="/">
                     <Icons.logo className="h-5" />
                 </Link>
