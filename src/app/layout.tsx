@@ -1,10 +1,10 @@
 import "@/styles/globals.css";
-import { Inter } from "next/font/google";
+import { Sen } from "next/font/google";
 import { Footer, Header } from "@/components";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
-const inter = Inter({ subsets: ["latin"] });
+const sen = Sen({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: "Alisherov Sadulla",
@@ -21,7 +21,7 @@ type RootLayoutProps = {
 export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
     return (
         <html lang="en">
-            <body className={inter.className}>
+            <body className={sen.className}>
                 <Header />
                 {children}
                 <Footer />
