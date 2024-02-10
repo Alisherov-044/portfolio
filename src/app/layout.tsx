@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Alisherov Sadulla",
     description: "My portfolio website as a nextjs developer",
     icons: {
-        icon: "/favicon.png",
+        icon: "/favicon.avif",
     },
 };
 
