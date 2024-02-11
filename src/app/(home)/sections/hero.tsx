@@ -56,7 +56,7 @@ export function Hero() {
                     everyone can use it to create better user interfaces
                 </p>
             </div>
-            <div className="hidden md:block bg-secondary-bg w-2/3 h-screen absolute top-0 right-0 -translate-y-20 -z-10"></div>
+            <div className="hidden md:block bg-secondary-bg w-2/3 h-[500px] lg:h-[600px] xl:h-[700px] min-[1570px]:h-[800px] min-[1730px]:h-[900px] absolute top-0 right-0 -translate-y-20 -z-10"></div>
         </section>
     );
 }
