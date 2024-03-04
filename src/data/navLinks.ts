@@ -1,4 +1,4 @@
-type TNavLink = {
+export type TNavLink = {
     id: number;
     title: string;
     url: string;

@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
 import { Sen } from "next/font/google";
-import { Footer, Header } from "@/components";
+import { Footer, Header, Toaster } from "@/components";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
@@ -25,6 +25,7 @@ export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
                 <Header />
                 {children}
                 <Footer />
+                <Toaster duration={2000} position="bottom-right" />
             </body>
         </html>
     );

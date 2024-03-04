@@ -28,6 +28,7 @@
     :root {
         --background: #030712;
         --foreground: #ffffff;
+        --smoke: #fff3e4;
 
         --card: #ffffff;
         --card-foreground: #030712;
@@ -37,9 +38,17 @@
 
         --primary: #111827;
         --primary-foreground: #f9fafb;
+        --primary-bg: #181823;
+
+        --gray-text: #8491a0;
+        --gray-text-dark: #5b6876;
+
+        --green-primary: #0ff;
 
         --secondary: #f3f4f6;
         --secondary-foreground: #111827;
+        --secondary-text: #ffffffb3;
+        --secondary-bg: #181823;
 
         --muted: #f3f4f6;
         --muted-foreground: #6b7280;
@@ -58,43 +67,42 @@
     }
 }
 
-@layer base {
-    * {
-        @apply border-border;
-    }
+* {
+    @apply border-border;
+}
 
-    html,
-    body {
-        @apply h-full;
-    }
+html,
+body {
+    @apply h-full scroll-smooth;
+}
 
-    body {
-        @apply flex flex-col justify-between bg-background text-foreground;
-    }
+body {
+    @apply flex flex-col justify-between bg-background text-foreground;
+}
 
-    body > main {
-        @apply flex-auto;
-    }
+body > main {
+    @apply flex-auto;
+}
 
-    .container {
-        @apply max-w-[1500px] w-full px-5 mx-auto;
-    }
+.container {
+    @apply max-w-[1800px] w-full px-3 mx-auto;
+}
 
-    .slide-in-from-left {
-        opacity: 0;
-        transform: translateX(-100%);
-        animation: slide-in-from-left 0.7s 0.3s ease forwards;
-    }
+.container-sm {
+    @apply max-w-[1200px] w-full px-3 mx-auto;
+}
 
-    .slide-in-from-right {
-        opacity: 0;
-        transform: translateX(100%);
-        animation: slide-in-from-right 0.7s 0.3s ease forwards;
-    }
+.slide-in-from-left {
+    @apply opacity-0 translate-x-full;
+    animation: slide-in-from-left 0.7s 0.3s ease forwards;
+}
 
-    .slide-in-from-right-lazy {
-        opacity: 0;
-        transform: translateX(100%);
-        animation: slide-in-from-right 1s 0.3s ease forwards;
-    }
+.slide-in-from-right {
+    @apply opacity-0 translate-x-full;
+    animation: slide-in-from-right 0.7s 0.3s ease forwards;
+}
+
+.slide-in-from-right-lazy {
+    @apply opacity-0 translate-x-full;
+    animation: slide-in-from-right 1s 0.3s ease forwards;
 }

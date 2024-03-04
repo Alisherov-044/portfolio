@@ -24,18 +24,24 @@ const config = {
                 ring: "var(--ring)",
                 background: "var(--background)",
                 foreground: "var(--foreground)",
+                smoke: "var(--smoke)",
                 primary: {
                     DEFAULT: "var(--primary)",
                     foreground: "var(--primary-foreground)",
+                    bg: "var(--primary-bg)",
+                },
+                gray: {
+                    text: "var(--gray-text)",
+                    "text-dark": "var(--gray-text-dark)",
                 },
                 green: {
-                    primary: "#0ff",
+                    primary: "var(--green-primary)",
                 },
                 secondary: {
                     DEFAULT: "var(--secondary)",
                     foreground: "var(--secondary-foreground)",
-                    text: "#ffffffb3",
-                    bg: "#181823",
+                    text: "var(--secondary-text)",
+                    bg: "var(--secondary-bg)",
                 },
                 destructive: {
                     DEFAULT: "var(--destructive)",

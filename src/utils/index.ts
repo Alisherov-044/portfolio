@@ -1,0 +1,1 @@
+export { formatIndex } from "./formatIndex";

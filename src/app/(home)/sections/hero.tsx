@@ -25,7 +25,7 @@ export function Hero() {
     ];
 
     return (
-        <section className="flex flex-col mt-5 md:flex-row md:items-center overflow-hidden lg:mt-10 xl:mt-16">
+        <section className="max-w-[1920px] mx-auto flex flex-col mt-5 md:flex-row md:items-center overflow-hidden lg:mt-10 xl:mt-16 mb-24 2xl:mb-48">
             <div className="relative w-full shrink-0 md:w-1/2 aspect-video slide-in-from-left">
                 <picture>
                     {images.map((image) => (
@@ -51,9 +51,12 @@ export function Hero() {
                     </span>
                 </h1>
                 <p className="leading-7 font-semibold slide-in-from-right-lazy lg:text-lg xl:text-xl xl:leading-7">
-                    I&apos;m the small developer with big desire and dream. My
-                    wish in the future is to create my own framework that
-                    everyone can use it to create better user interfaces
+                    In the realm of software development, I&apos;m a passionate
+                    dreamer with a singular vision: to craft a groundbreaking
+                    framework. This tool will empower developers to effortlessly
+                    create exquisite user interfaces, ushering in a new era of
+                    digital interaction. Join me on this journey towards
+                    boundless creativity and accessibility.
                 </p>
             </div>
             <div className="hidden md:block bg-secondary-bg w-2/3 h-[500px] lg:h-[600px] xl:h-[700px] min-[1570px]:h-[800px] min-[1730px]:h-[900px] absolute top-0 right-0 -translate-y-20 -z-10"></div>
