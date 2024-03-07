@@ -104,7 +104,7 @@ export function Contact() {
                         )}
                     />
                     <Button variant="primary" className="w-full text-md">
-                        Let's get started
+                        Let&apos;s get started
                     </Button>
                 </form>
             </Form>
